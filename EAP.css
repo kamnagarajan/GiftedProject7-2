@@ -1,3 +1,10 @@
+body {
+background-color: #fffff ;
+}
+
+p{
+	font-family:arial;
+}
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
@@ -17,4 +24,99 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.btn-group button {
+  background-color: #ffff; /* Green background */
+  color:#4d0c0c;
+  border:4px solid gainsboro; /* Green border */
+  
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  text-decoration:none;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table; /*  at the buttons side by side */
+  text-decoration:none;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders 
+  at the buttons side by side */
+  text-decoration:none;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color:#4d0c0c; 
+  color:white/*  at the buttons side by side */
+}
+.btn-group button:active {
+  background-color:white; 
+  color:white/*  at the buttons side by side */
+}
+.text-right{
+	position:absolute;
+	left:16px;
+}
+
+.container {
+  position: relative;
+  text-align:top-left;
+  color: white;
+  width:500px;
+  height:400px
+  transparent:0.5;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+href {
+	color: black;
+	
 }
