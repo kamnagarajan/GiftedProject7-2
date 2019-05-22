@@ -3,7 +3,29 @@
 <head>
 <link rel="stylesheet" type="text/css" href="EAP.css"> 
 </head>
+<style>
+#more {display: none;}
+</style>
+
 <body >
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 
 <h2>Rabies</h2>
 <p>He must have had rabies. He had hallucinations, partial paralysis, and was in a state of delirium. </p>
@@ -28,5 +50,26 @@ After getting bitten by some sort of animal, they wouldn’t remember getting bi
   <button><a href="EAP(3).html">J. J. Moran's evidence</a></button>
   <button><a href="EAP(2).html">J. E. Snodgrass's evidence</a></button>
 </div>
+
+<!--Ze end-->
+<p>
+<span id="dots"></span>
+<div class="btn-group">
+<span id="more"><br/>You’ve selected this as your theory. 
+We, like everyone, are not entirely sure how he died, so we just compiled the evidence and let you figure out for yourself what you think it was. 
+Thanks for playing!.<br>
+
+
+<button><a href="EAP(1).html">Play </a></button>
+<button><a href="EAP(3).html">Go </a></button></span>
+</p>
+<br><br>
+<button border-color="#4d1515" onclick="myFunction()" id="myBtn">Read more</button>
+</div>
+
+
+
+  
+
 </body>
 </html>
